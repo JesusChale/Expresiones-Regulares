@@ -1,0 +1,31 @@
+label {
+    display: block;
+}
+
+input:not([type="submit"]) {
+    margin: 5px 0 10px 0;
+}
+
+h4 {
+    font-family: sans-serif;
+    display: inline;
+    color: red;
+}
+
+input[type="submit"] {
+    display: block;
+}
+
+p {
+    margin: 0;
+}
+
+h1,
+h2 {
+    margin: 5px;
+    font-family: sans-serif;
+}
+
+html {
+    background-color: skyblue;
+}
