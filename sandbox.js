@@ -3,7 +3,7 @@ function validacion() {
     var valorNum = document.getElementById("numMiles").value;
     var result1 = false;
     var result2 = false;
-
+    var varFinal = false;
 
     if (!(/^((A(0[1-9])|A([1-9][0-9]))|([B-Z][0-9]{2}))-([A-Z]{3})$/.test(valorPlaca))) {
         document.getElementById("errorPlaca").innerHTML = "No es una Placa valida";
@@ -24,9 +24,11 @@ function validacion() {
         result2 = true;
     }
     if (result1 && result2) {
-        return true;
+        window.open("datos.html");
+        varFinal = true;
     } else {
-        return false;
-    }
 
+        varFinal = false;
+    }
+    return varFinal;
 }

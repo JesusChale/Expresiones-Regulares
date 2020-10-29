@@ -10,11 +10,8 @@
 </head>
 
 <body>
-    <h1>Uso de Expresiones Regulares para Validacion de Cadenas</h1>
-    <h2>Alumno: Jesús Armando Chalé Ciau</h2>
-    <h2>Numero de control: 17390323</h2>
     <form action="" onsubmit="return validacion()">
-        <label for="placaAuto">Placa de Auto:</label>
+        <label for="placaAuto" id="placa">Placa de Auto:</label>
         <p>Compuesto de una letra de A-Z, 2 numeros, 1 "-" y por ultimo 3 letras de A-Z, se excluye A00-Seguido de 3 letras</p>
         <input type="text" id="placaAuto" placeholder="Tu placa">
         <h4 id="errorPlaca"></h4>
@@ -24,6 +21,7 @@
         <h4 id="errorMiles"></h4>
         <input type="submit" value="Enviar">
     </form>
+
 </body>
 
 </html>
